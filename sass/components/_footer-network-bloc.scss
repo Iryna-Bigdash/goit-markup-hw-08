@@ -1,0 +1,50 @@
+/* footer social network bloc */
+.footer-network {
+  display: inline-block;
+  margin-left: 70px;
+  margin-right: 93px;
+  padding: 12px 0 0;
+
+  &__title {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $white-color;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    @extend %list;
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item {
+    @extend %list;
+    width: 44px;
+    height: 44px;
+    background: $icon-footer-bgr;
+    border-radius: 50%;
+    transition: background-color $transition-time $function-time;
+
+    &:hover,
+    :focus {
+      background-color: $acsent-color;
+    }
+  }
+}
+
+.footer-network__link {
+  @extend %link;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  fill: $white-color;
+}

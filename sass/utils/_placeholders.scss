@@ -1,0 +1,46 @@
+%link {
+  font-style: normal;
+  text-decoration: none;
+  color: $secondary-text-color;
+}
+%list {
+  list-style: none;
+}
+%section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width:1200px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+}
+%section__title {
+  // margin-bottom: 50px;
+  font-size: 36px;
+  text-align: center;
+  color: $secondary-text-color;
+}
+%button {
+  min-width: 200px;
+  max-height: 50px;
+ 
+   font-family: $primery-fonts;
+   font-weight: 700;
+   font-size: 16px;
+   letter-spacing: 0.06em;
+   line-height: 1.88;
+   text-align: center;
+   align-items: center;
+ 
+   color: $white-color;
+   background-color: $acsent-color;
+   box-shadow: $main-shadow;
+   border-radius: 4px;
+   border: none;
+   cursor: pointer;
+
+   transition: background-color $transition-time $function-time,
+   box-shadow $transition-time $function-time;
+ }

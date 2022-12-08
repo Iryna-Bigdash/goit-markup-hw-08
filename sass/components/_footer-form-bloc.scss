@@ -1,0 +1,69 @@
+/* footer form  bloc*/
+.footer-form {
+    display: inline-block;
+    padding: 12px 0 0;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $white-color;
+  }
+
+  &__form {
+    width: 570px;
+    height: 86px;
+    display: inline-flex;
+  }
+
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    color: $white-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $hero-bgr;
+    outline: none;
+
+    transition: border-color $transition-time $function-time;
+
+    &:focus {
+      border-color: $secondary-acsent-color;
+    }
+  }
+
+  &__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    color: $footer-contacts-color;
+  }
+
+  &__button {
+    @extend %button;
+    display: inline-flex;
+    padding: 10px 28px;
+    margin-left: 12px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $secondary-acsent-color;
+      box-shadow: $main-shadow;
+      border-radius: 4px;
+    }
+  }
+
+}
+
+.button__icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}

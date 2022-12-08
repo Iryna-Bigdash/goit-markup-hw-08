@@ -1,0 +1,55 @@
+.footer {
+  padding: 60px 0;
+  background-color: $hero-bgr;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+
+  &__logo--reverse {
+    color: $white-color;
+  }
+}
+
+.footer-contacts {
+  &__list {
+    @extend %list;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  &__link {
+    @extend %link;
+    font-family: $primery-fonts;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $footer-contacts-color;
+    text-decoration: none;
+    transition: color $transition-time $function-time;
+
+    &:hover,
+    &:focus {
+      color: $acsent-color;
+    }
+  }
+  &__adress {
+    color: $white-color;
+    transition: color $transition-time $function-time;
+
+    &:hover,
+    &:focus {
+      color: $acsent-color;
+    }
+  }
+}

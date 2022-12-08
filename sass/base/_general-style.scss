@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-color: $white-color;
+    color: $main-text-color;
+    font-family: $primery-fonts;
+    font-size: 16px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin: 0;
+    padding-top: 80px;
+  }

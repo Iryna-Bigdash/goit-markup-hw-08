@@ -1,0 +1,40 @@
+.portfolio-nav {
+  @extend %section;
+  &__container {
+    margin-bottom: 50px;
+  }
+  &__list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+  &__button {
+    padding: 6px 22px;
+    min-width: 73px;
+    display: inline-block;
+    font-family: $primery-fonts;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+    text-align: center;
+    background-color: $secondary-bgr;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: background-color $transition-time $function-time,
+      box-shadow $transition-time $function-time,
+      color $transition-time $function-time;
+
+    &:hover,
+    &:focus {
+      background-color: $acsent-color;
+      color: $white-color;
+      box-shadow: $portfolio-nav-buttons-shadow;
+      border-radius: 4px;
+    }
+  }
+}
