@@ -19,8 +19,11 @@
 .team {
   &__list {
     @extend %list;
+
+    @media screen and (min-width:1200px) {
     display: flex;
     justify-content: space-between;
+  }
   }
 
   &__item {
