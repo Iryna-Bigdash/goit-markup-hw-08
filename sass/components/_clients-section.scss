@@ -2,29 +2,51 @@
   @extend %section;
 
   &__title {
-    margin-bottom: 50px;
-    font-size: 36px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     color: $secondary-text-color;
+
+    @media screen and (min-width:1200px) {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
   }
 }
 
 .clients {
   &__list {
     @extend %list;
+  
     display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    
+
+    @media screen and (min-width:1200px) {
+    margin-top: 20px;
     justify-content: space-between;
-    margin-top: 50px;
+  }
   }
 
   &__item {
-    width: 170px;
     height: 92px;
+    width: 210px;
+
+
+    @media screen and (min-width:1200px) {
+      width: 170px;
+    }
   }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__item:not(:last-child) {
+
+  //   @media screen and (min-width:1200px) {
+  //     margin-right: 30px;
+  //   }
+  
+  // }
 
   &__link {
     @extend %link;
