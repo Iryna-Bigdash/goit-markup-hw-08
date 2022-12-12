@@ -123,14 +123,13 @@
   &__link {
     @extend %link;
     display: flex;
-    justify-content: center;
     align-items: center;
     padding-top: 5px;
     padding-bottom: 5px;
     font-family: $primery-fonts;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: $main-text-color;
   }
@@ -138,6 +137,8 @@
     display: flex; 
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -153,6 +154,8 @@
   margin-right: 10px;
   fill: currentColor;
   transition: fill $transition-time $function-time;
+
+  
 }
 
 .contacts-telefon__icon {

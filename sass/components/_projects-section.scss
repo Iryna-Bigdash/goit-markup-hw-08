@@ -22,15 +22,14 @@
     @extend %list;
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
     justify-content: space-between;
+    // flex-basis: calc((100% - 30px) / 3);
   }
 
   &__items {
     position: relative;
-  }
 
-  &__items:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
