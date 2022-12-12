@@ -1,7 +1,10 @@
 .modal-form {
-  width: 500px;
+
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width:1200px) {
+    width: 528px;
+  }
 
   &__title {
     font-size: 20px;
@@ -107,6 +110,14 @@
     margin-bottom: 30px;
     cursor: pointer;
 
+    font-size: 12px;
+    line-height: 1.167;
+
+    @media screen and (min-width:1200px) {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
     &:hover,
     &:focus {
       outline: 2px solid $acsent-color;
@@ -116,6 +127,14 @@
   &__link {
     color: $acsent-color;
     text-decoration: underline;
+
+    font-size: 12px;
+    line-height: 1.167;
+
+    @media screen and (min-width:1200px) {
+      font-size: 14px;
+      line-height: 1.7;
+    }
   }
 
 }

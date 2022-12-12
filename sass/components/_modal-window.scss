@@ -4,8 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  min-height: 581px;
-  min-width: 528px;
+  min-width: 450px;
   padding: 40px;
 
   background: $white-color;
@@ -13,6 +12,11 @@
   border-radius: 4px;
 
   transition: transform $transition-time $function-time;
+
+  @media screen and (min-width:1200px) {
+      min-height: 581px;
+      min-width: 528px;
+  }
 }
 
 .close-button {

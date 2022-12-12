@@ -1,20 +1,14 @@
 .team {
-  &__title--hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
-
   @extend %section;
   background-color: $secondary-bgr;
 }
+.section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+    color: $secondary-text-color;
+  }
+
 
 .team {
   &__list {
@@ -22,17 +16,22 @@
 
     @media screen and (min-width:1200px) {
     display: flex;
+    gap: 30px;
     justify-content: space-between;
   }
   }
 
   &__item {
-    width: 270px;
+    width: 450px;
     box-shadow: $person-card-shedow;
-    margin-top: 16px;
 
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: 10px;
+    }
+  
+
+    @media screen and (min-width:1200px) {
+      width: 270px;
     }
   }
 
@@ -41,8 +40,15 @@
   }
 
   &__description {
-    max-width: 370px;
-    padding: 30px 10px;
+    max-width: 450px;
+    padding-top: 30px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width:1200px) {
+      max-width: 370px;
+      padding-bottom: 30px;
+    }
+   
     background-color: $white-color;
     border: 1px solid $portfolio-cards-brd;
     border-top: none;
