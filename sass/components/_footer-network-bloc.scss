@@ -1,10 +1,15 @@
 /* footer social network bloc */
 .footer-network {
   display: inline-block;
-  margin-left: 70px;
-  margin-right: 93px;
-  padding: 12px 0 0;
+  margin-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+    margin-right: 93px;
+    padding: 12px 0 0;
+
+  }
+    
   &__title {
     font-weight: 700;
     line-height: 1.14;
@@ -38,6 +43,7 @@
   @extend %link;
   height: 100%;
   width: 100%;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;

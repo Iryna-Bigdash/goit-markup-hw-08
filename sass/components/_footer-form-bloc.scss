@@ -1,8 +1,10 @@
 /* footer form  bloc*/
 .footer-form {
-    display: inline-block;
-    padding: 12px 0 0;
-
+     // display: inline-block;   
+@media screen and (min-width: 1200px) {
+  padding: 12px 0 0;
+}
+  
   &__title {
     font-weight: 700;
     font-size: 14px;
@@ -13,15 +15,20 @@
   }
 
   &__form {
-    width: 570px;
-    height: 86px;
-    display: inline-flex;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+     display: inline-flex;
+     width: 570px;
+     height: 86px;
+    }
   }
 
   &__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px 16px;
+    margin-bottom: 20px;
     color: $white-color;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -30,6 +37,11 @@
     outline: none;
 
     transition: border-color $transition-time $function-time;
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0px;
+     }
 
     &:focus {
       border-color: $secondary-acsent-color;
