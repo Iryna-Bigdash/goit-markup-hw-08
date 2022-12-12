@@ -16,9 +16,9 @@
     }
 
 
-
     @media screen and (min-width:1200px) {
       display: flex;
+      flex-wrap: nowrap;
       justify-content: space-between;
       text-align: start;
     }
