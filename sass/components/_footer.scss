@@ -5,7 +5,7 @@
   &__container {
     text-align: center;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -15,15 +15,14 @@
       padding-right: 74px;
     }
 
-
     @media screen and (min-width:1200px) {
       display: flex;
       flex-wrap: nowrap;
       justify-content: space-between;
       text-align: start;
+
     }
-    }
-   
+  }
 
   &__logo {
     display: inline-block;
@@ -54,7 +53,6 @@
       margin-bottom: 9px;
     }
 
-
   }
 
   &__link {
@@ -73,6 +71,7 @@
       color: $acsent-color;
     }
   }
+
   &__adress {
     color: $white-color;
     transition: color $transition-time $function-time;

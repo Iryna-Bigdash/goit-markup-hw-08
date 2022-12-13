@@ -14,8 +14,8 @@
   transition: transform $transition-time $function-time;
 
   @media screen and (min-width:1200px) {
-      min-height: 581px;
-      min-width: 528px;
+    min-height: 581px;
+    min-width: 528px;
   }
 }
 
@@ -36,12 +36,14 @@
   margin-top: 8px;
   margin-right: 8px;
   cursor: pointer;
+
   &:hover {
     .close-button__icon {
       fill: $acsent-color;
     }
   }
 }
+
 .close-button__icon {
   fill: $black-color;
   transition: transform $transition-time $function-time;

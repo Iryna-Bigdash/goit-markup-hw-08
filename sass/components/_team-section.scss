@@ -2,12 +2,13 @@
   @extend %section;
   background-color: $secondary-bgr;
 }
+
 .section-title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    text-align: center;
-    color: $secondary-text-color;
-  }
+  margin-bottom: 50px;
+  font-size: 36px;
+  text-align: center;
+  color: $secondary-text-color;
+}
 
 
 .team {
@@ -24,10 +25,10 @@
 
 
     @media screen and (min-width:1200px) {
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
-  }
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+    }
   }
 
   &__item {
@@ -74,7 +75,7 @@
       max-width: 370px;
       padding-bottom: 30px;
     }
-   
+
     background-color: $white-color;
     border: 1px solid $portfolio-cards-brd;
     border-top: none;
