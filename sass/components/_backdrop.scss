@@ -9,7 +9,11 @@
     z-index: 50;
   
     transition: visibility $transition-time $function-time,
-      opacity $transition-time $function-time;
+    opacity $transition-time $function-time;
+
+    padding: 94px 15px;
+    overflow-y: scroll;
+
   }
   
   .backdrop.is-hidden {
@@ -17,5 +21,6 @@
     pointer-events: none;
     visibility: hidden;
     overflow: visible;
+    overflow-y: scroll;
   }
   
