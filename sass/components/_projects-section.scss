@@ -16,7 +16,6 @@
   }
 }
 
-
 .projects {
   &__list {
     @extend %list;
@@ -29,7 +28,8 @@
 
   &__items {
     position: relative;
-
+    width: 370px;
+    height: 294px;
   }
 }
 
