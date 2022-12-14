@@ -39,14 +39,21 @@
 }
 
 .overlay {
-  min-width: 480px;
-  min-height: 400px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-color: $hero-bgr;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
+  @media screen and (max-width:480px) {
+    width: 100vw;
+  }
+  @media screen and (min-width:480px) {
+    min-width: 480px;
+    
+  }
 
   @media screen and (min-width:1200px) {
     max-width: 1600px;

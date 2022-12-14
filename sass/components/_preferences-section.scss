@@ -35,28 +35,35 @@
 .preferences {
   &__list {
     @extend %list;
+    display: flex;
+    gap: 30px;
+
+    @media screen and (max-width: 480px){
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+
+@media screen and (min-width: 480px){
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
     @media screen and (min-width: 768px) {
       display: inline-flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-
-    @media screen and (min-width:1200px) {
-      display: inline-flex;
-      gap: 30px;
     }
   }
 
   &__item {
-    width: 450px;
 
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    @media screen  and (max-width:480px) {
+      width: 94vw;
     }
-
+      
+    @media screen  and (min-width:480px) {
+      width: 450px;
+    }
+  
     @media screen and (min-width:768px) {
       width: 354px;
       gap: 30px;
@@ -72,13 +79,22 @@
 }
 
 .preferences__icons {
-  width: 450px;
-  height: 120px;
+
+  min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
   background-color: $secondary-bgr;
+
+  @media screen  and (max-width:480px) {
+    max-width: 94vw;
+    flex-direction: column;
+  }
+    
+  @media screen  and (min-width:480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width:768px) {
     width: 354px;
