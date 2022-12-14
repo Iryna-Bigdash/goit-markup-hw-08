@@ -21,11 +21,8 @@
     <!-- Header -->
     <header class="header page-header">
       <nav class="header__nav container">
-        <a href="./index.html" lang="en" class="logo link">
-          Web
-          <span class="logo--black">Studio</span>
+        <a href="./index.html" lang="en" class="logo link">Web<span class="logo--black">Studio</span>
         </a>
-
         <ul class="header-menu list">
           <li class="header-menu__item">
             <a
@@ -551,9 +548,7 @@
       <div class="footer__container container">
         <div class="footer-contacts" id="our-contacts">
           <a href="./index.html" lang="en" class="logo link footer__logo">
-            Web
-            <span class="footer__logo--reverse">Studio</span>
-          </a>
+            Web<span class="footer__logo--reverse">Studio</span></a>
           <address>
             <ul class="footer-contacts__list list">
               <li class="footer-contacts__item">
@@ -640,6 +635,68 @@
       </div>
     </footer>
 
+    <!-- Mobile Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle menu-toggle--position js-close-menu">
+        <svg width="40" height="40" class="menu-toggle__icon">
+          <use
+            href="./images/icons.svg#icon-burger-close"
+            class="menu-toggle__icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu__item item">
+          <a href="./index.html" class="link mobile-menu__link current">
+            Студія
+          </a>
+        </li>
+        <li class="mobile-menu__item item">
+          <a href="./portfolio.html" class="link mobile-menu__link">
+            Портфоліо
+          </a>
+        </li>
+        <li class="mobile-menu__item item">
+          <a href="./index.html#our-contacts" class="link mobile-menu__link">
+            Контакти
+          </a>
+        </li>
+      </ul>
+      <div class="mobile-menu__wrep">
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a
+              href="tel:+380961111111"
+              class="mobile-contacts__link-tel link">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a
+              href="mailto:info@devstudio.com"
+              lang="en"
+              class="mobile-contacts__link-mail link">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-socalnetworks list">
+          <li class="mobile-socalnetworks__item">
+            <a href="#" class="mobile-socalnetworks__link link">Instagram</a>
+          </li>
+          <li class="mobile-socalnetworks__item">
+            <a href="#" class="mobile-socalnetworks__link link">Twitter</a>
+          </li>
+          <li class="mobile-socalnetworks__item">
+            <a href="#" class="mobile-socalnetworks__link link">Facebook</a>
+          </li>
+          <li class="mobile-socalnetworks__item">
+            <a href="#" class="mobile-socalnetworks__link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Modal Window -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal-window">
@@ -647,7 +704,7 @@
           <h2 class="modal-form__title">
             Залиште свої дані, ми вам передзвонимо
           </h2>
-          <button data-modal-close class="close-button">
+          <button type="button" data-modal-close class="close-button">
             <svg class="close-button__icon" width="18px" height="18px">
               <use href="./images/icons.svg#icon-modal-close-black"></use>
             </svg>
@@ -715,67 +772,7 @@
         </form>
       </div>
 
-      <!-- Mobile Menu -->
-      <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle menu-toggle--position js-close-menu">
-          <svg width="40" height="40" class="menu-toggle__icon">
-            <use
-              href="./images/icons.svg#icon-burger-close"
-              class="menu-toggle__icon-close"></use>
-          </svg>
-        </button>
-
-        <ul class="mobile-menu list">
-          <li class="mobile-menu__item item">
-            <a href="./index.html" class="link mobile-menu__link current">
-              Студія
-            </a>
-          </li>
-          <li class="mobile-menu__item item">
-            <a href="./portfolio.html" class="link mobile-menu__link">
-              Портфоліо
-            </a>
-          </li>
-          <li class="mobile-menu__item item">
-            <a href="./index.html#our-contacts" class="link mobile-menu__link">
-              Контакти
-            </a>
-          </li>
-        </ul>
-        <div class="mobile-menu__wrep">
-          <ul class="mobile-contacts list">
-            <li class="mobile-contacts__item">
-              <a
-                href="tel:+380961111111"
-                class="mobile-contacts__link-tel link">
-                +38 096 111 11 11
-              </a>
-            </li>
-            <li class="mobile-contacts__item">
-              <a
-                href="mailto:info@devstudio.com"
-                lang="en"
-                class="mobile-contacts__link-mail link">
-                info@devstudio.com
-              </a>
-            </li>
-          </ul>
-          <ul class="mobile-socalnetworks list">
-            <li class="mobile-socalnetworks__item">
-              <a href="#" class="mobile-socalnetworks__link link">Instagram</a>
-            </li>
-            <li class="mobile-socalnetworks__item">
-              <a href="#" class="mobile-socalnetworks__link link">Twitter</a>
-            </li>
-            <li class="mobile-socalnetworks__item">
-              <a href="#" class="mobile-socalnetworks__link link">Facebook</a>
-            </li>
-            <li class="mobile-socalnetworks__item">
-              <a href="#" class="mobile-socalnetworks__link link">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      
     </div>
     <script src="./js/header.js"></script>
     <script
