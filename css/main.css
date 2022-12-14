@@ -785,23 +785,6 @@ img {
     margin-bottom: 0px;
   }
 }
-.team__image {
-  display: block;
-  width: 450px;
-  height: 460px;
-}
-@media screen and (min-width: 768px) {
-  .team__image {
-    width: 354px;
-    height: 374px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__image {
-    width: 270px;
-    height: 260px;
-  }
-}
 .team__description {
   max-width: 450px;
   padding-top: 30px;
