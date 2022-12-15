@@ -13,6 +13,10 @@
 
   transition: transform $transition-time $function-time;
 
+  @media screen and (max-width:479px) {
+    width: 90%;
+  }
+
   @media screen and (min-width:480px) {
     width: 450px;
   }
