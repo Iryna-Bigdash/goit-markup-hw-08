@@ -4,8 +4,11 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  max-width: 100vw;
+  max-width: 450px;
   padding: 40px;
+
+ max-height:100%;
+ overflow-y:auto;
 
   background: $white-color;
   box-shadow: $modal-box-shedow;
@@ -14,7 +17,7 @@
   transition: transform $transition-time $function-time;
 
   @media screen and (max-width:479px) {
-    width: 90%;
+    width: 100%;
   }
 
   @media screen and (min-width:480px) {
