@@ -448,6 +448,14 @@ img {
   color: #2196f3;
 }
 
+.item-tel {
+  margin-bottom: 32px;
+}
+
+.item-mail {
+  margin-bottom: 64px;
+}
+
 .mobile-contacts__link-tel {
   font-family: "Roboto", sans-serif;
   font-size: 34px;
@@ -469,6 +477,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
 }
 .mobile-socalnetworks__item {
   font-size: 18px;
@@ -476,7 +487,6 @@ img {
 }
 .mobile-socalnetworks__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
-  margin-right: 10px;
 }
 .mobile-socalnetworks__link {
   margin-right: 10px;
@@ -489,6 +499,16 @@ img {
 
 .menu-toggle:hover .menu-toggle__icon {
   fill: #2196f3;
+}
+
+.mobile-menu__wrep {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+}
+
+.menu-toggle__icone-menu {
+  fill: #000000;
 }
 
 .hero {
